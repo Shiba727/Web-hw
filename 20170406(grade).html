@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Are you a bad student？</p>
+
+score:<br>
+<input type="number" name="score" id="score1">
+<button type="button" onclick="failornot()">submit</button>
+<script>
+function failornot(){
+	var score;
+	score = parseInt(document.getElementById("score1").value);
+	if (score < 60) {
+    	document.getElementById("demo").innerHTML = "You Fail Q_Q";
+	}
+    else{
+    	document.getElementById("demo").innerHTML = "你及格了！";
+
+	}
+}
+</script>
+<p id="demo"></p>
+</body>
+</html>
